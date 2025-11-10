@@ -7,33 +7,33 @@
 　そこで、本アプリは一部の機能で緩やかに連結されながらも明確に分離された二種のプラットフォームを内蔵する（下図参照）。これに対応して、ユーザーには一つのアカウントの中に二つの独立した名義("Persona")が設定され、双方を切り替えて各プラットフォームの機能を利用することができる。匿名性に関しても利用する機能によって多様な幅を持つ。<br>
 　これにより単なる機能面を超えた巨視的なレベルでの「完成」が達成出来ると考える。
 
-　<img src="docs/screenshots/abstract.png" width="420">
+  <td width="60%"><img src="docs/screenshots/abstract.png" width="100%"></td>
 
 ## スクリーンショット（一部）
 <table>
   <tr>
-    <td><img src="docs/screenshots/eyeshome.png" width="320"></td>
-    <td><img src="docs/screenshots/eyescomment1.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/eyeshome.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/eyescomment1.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/eyescomment2.png" width="320"></td>
-    <td><img src="docs/screenshots/eyesform.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/eyescomment2.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/eyesform.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/eyesprofile.png" width="320"></td>
-    <td><img src="docs/screenshots/voiceshome.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/eyesprofile.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/voiceshome.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/voicesform.png" width="320"></td>
-    <td><img src="docs/screenshots/cluster.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/voicesform.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/cluster.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/eyesmessage.png" width="320"></td>
-    <td><img src="docs/screenshots/eyesfollow.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/eyesmessage.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/eyesfollow.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/voicesfollow.png" width="320"></td>
-    <td><img src="docs/screenshots/login.png" width="320"></td>
+    <td width="45%"><img src="docs/screenshots/voicesfollow.png" width="100%"></td>
+    <td width="45%"><img src="docs/screenshots/login.png" width="100%"></td>
   </tr>
 </table>
 
@@ -47,7 +47,7 @@
 
 ## プロジェクト構成の概要
     .
-    ├─ frontend/                 #フロントエンド(Next.js)
+    ├─ frontend/               #フロントエンド(Next.js)
     │  ├─ src/
     │  │ ├─ components/        # UIコンポーネント
     │  │ ├─ pages/             # ページ（ルーティングのみ）
@@ -58,7 +58,7 @@
     │  ├─ package.json
     │  ├─ next.config.ts
     │  └─ ...
-    ├─ backend/                  #バックエンド(Spring Boot)
+    ├─ backend/                #バックエンド(Spring Boot)
     │  ├─ modules/
     │  │ ├─ api/               # 起動モジュール 
     │  │ ├─ common/            # 例外・共通型

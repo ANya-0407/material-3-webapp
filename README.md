@@ -7,10 +7,12 @@
 　そこで、本アプリは一部の機能で緩やかに連結されながらも明確に分離された二種のプラットフォームを内蔵する（下図参照）。これに対応して、ユーザーには一つのアカウントの中に二つの独立した名義("Persona")が設定され、双方を切り替えて各プラットフォームの機能を利用することができる。匿名性に関しても利用する機能によって多様な幅を持つ。<br>
 　これにより単なる機能面を超えた巨視的なレベルでの「完成」が達成出来ると考える。
 
-  <td width="60%"><img src="docs/screenshots/abstract.png" width="100%"></td>
+<p align="center">
+    <img src="docs/screenshots/abstract.png" width="60%" alt="abstract">
+</p>
 
 ## スクリーンショット（一部）
-<table>
+<table width="100%">
   <tr>
     <td width="45%"><img src="docs/screenshots/eyeshome.png" width="100%"></td>
     <td width="45%"><img src="docs/screenshots/eyescomment1.png" width="100%"></td>
@@ -89,7 +91,7 @@
 
 ## 技術スタック
 - Frontend: Next.js 15.0.3 / React 18.3.1 / TypeScript 5.7.2
-- Backend API: Spring Boot 3.5.7 / Java 21.0.9
+- Backend: Spring Boot 3.5.7 / Java 21.0.9
 
 ## 動作環境
 - Node.js: v22.11.0

@@ -1,0 +1,286 @@
+﻿.voices_card_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 6px 12px #c5c5c5, -3px -6px 12px #ffffff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+
+    .voices_background_upper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 38px;
+        border-radius: 15px 15px 0 0;
+        border-top: 1px solid #787878;
+        border-left: 1px solid #787878;
+        border-right: 1px solid #787878;
+    }
+        .voices_background_upper::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+            box-shadow: 0 3px 10px #c5c5c5;
+        }
+
+        .account_icon_wrapper {
+            position: relative;
+            width: 51px;
+            height: 51px;
+            clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+            overflow: hidden;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+            margin-top: 34px;
+            margin-left: 12px;
+            z-index: 2;
+        }
+            .account_icon {
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            }
+
+        .account_name {
+            font-size: 17px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 3px;
+            margin-right: 50px;
+        }
+
+        .created_at {
+            font-size: 14px;
+            color: #545454;
+            letter-spacing: 1px;
+            margin-left: auto;
+            margin-right: 4.0%;
+        }
+
+    .voices_text {
+        width: 100%;
+        background: #ffffff;
+        font-size: 15px;
+        padding: 10px 20px 0 55px;
+        line-height: 1.30;
+        text-align: left;
+    }
+
+    .voices_image_layout1 {
+        width: 100%;
+        margin-top: 3.5px;
+    }
+        .voices_image_layout1 .voices_image_wrapper {
+            width: 100%;
+            position: relative;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+        }
+
+    .voices_image_layout2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 250px;
+        margin-top: 3px;
+    }
+        .voices_image_layout2 .voices_image_wrapper {
+            position: relative;
+            width: calc(50% - 2px);
+            height: 100%;
+            overflow: hidden;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+        }
+
+    .voices_image_layout3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 350px;
+        margin-top: 3px;
+    }
+        .voices_image_layout3 .voices_image_section1 {
+            width: calc(50% - 2px);
+            height: 100%;
+        }
+            .voices_image_layout3 .voices_image_section1 .voices_image_wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                cursor: pointer;
+            }
+
+        .voices_image_layout3 .voices_image_section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(50% - 2px);
+            height: 100%;
+        }
+            .voices_image_layout3 .voices_image_section2 .voices_image_wrapper {
+                position: relative;
+                width: 100%;
+                height: calc(50% - 2px);
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                cursor: pointer;
+            }
+
+    .voices_image_layout4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 350px;
+        margin-top: 3px;
+    }
+        .voices_image_layout4 .voices_image_section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(50% - 2px);
+            height: 100%;
+        }
+            .voices_image_layout4 .voices_image_section1 .voices_image_wrapper {
+                position: relative;
+                width: 100%;
+                height: calc(50% - 2px);
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                cursor: pointer;
+            }
+
+        .voices_image_layout4 .voices_image_section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(50% - 2px);
+            height: 100%;
+        }
+            .voices_image_layout4 .voices_image_section2 .voices_image_wrapper {
+                position: relative;
+                width: 100%;
+                height: calc(50% - 2px);
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                cursor: pointer;
+            }
+
+    .voices_background_lower {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 34px;
+        z-index: 3;
+    }
+        .voices_background_lower::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #787878;
+            border-radius: 2px;
+        }
+
+        .hashtag_container {
+            position: absolute;
+            bottom: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 35px;
+            background-image: linear-gradient(to top, rgba(256,256,256,0.7) 30%, rgba(256,256,256,0.5) 60%, rgba(256,256,256,0) 100%);
+        }
+            .hashtag {
+                font-size: 16px;
+                color: #545454;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+        .voices_viewtime {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            margin-left: 4.5%;
+            margin-right: auto;
+        }
+            .voices_viewtime p {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .voices_viewtime span {
+                font-size: 14px;
+                color: #686a68;
+            }
+
+        .voices_btn_container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            gap: 11px;
+            padding: 0 4.0% 0 15px;
+            margin-left: auto;
+        }
+            .menu_btn {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .quote_btn {
+                font-size: 17px;
+                color: #686a68;
+            }
+
+            .bookmark_btn {
+                font-size: 17px;
+                color: #686a68;
+            }
+
+            .good_btn {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 3px;
+            }
+                .good_btn p {
+                    font-size: 19px;
+                    color: hotpink;
+                }
+
+                .good_btn span {
+                    font-size: 14px;
+                    color: #686a68;
+                }

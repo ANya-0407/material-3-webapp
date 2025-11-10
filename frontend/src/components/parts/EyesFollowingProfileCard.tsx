@@ -1,0 +1,82 @@
+﻿//EyesFollowingProfileCardコンポーネントを作成
+
+import { EyesFollowProfileProps } from "src/types";
+import styles from 'src/styles/EyesFollowingProfileCard.module.css'
+import { useRouter } from "next/router";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+
+
+type EyesFollowingProfileCardProps = {
+    profile: EyesFollowProfileProps;
+};
+
+
+const EyesFollowingProfileCard: React.FC<EyesFollowingProfileCardProps> = ({ profile }) => {
+    // ルーター
+    const router = useRouter();
+
+    //画像のalt
+    const iconAlt = `Icon image: ${profile.accountName}`;
+
+    // ルーティング
+    const goEyesProfile = () => {
+        router.push(
+            { pathname: '/eyesprofile/[id]', query: { id: profile.accountId } },
+        );
+    };
+
+    return (
+        <>
+            <div className={styles.eyes_following_profile_card_background}>
+                <div className={styles.profile_background_left}>
+                    <div className={styles.account_icon_wrapper} onClick={goEyesProfile}>
+                        <Image
+                            className={styles.account_icon}
+                            src={profile.accountIcon}
+                            alt={iconAlt}
+                            fill
+                            priority={false}
+                        />
+                    </div>
+                </div>
+
+                <div className={styles.profile_background_right}>
+                    <div className={styles.profile_background_upper} onClick={goEyesProfile}>
+                        <button className={styles.account_link_btn}>
+                            <div className={styles.account_name}>
+                                <span>{profile.accountName}</span>
+
+                                {profile.isOfficial === true &&
+                                    <div className={styles.official_mark}><FontAwesomeIcon icon={faCheck} /></div>
+                                }
+
+                                {profile.isMutual === true &&
+                                    <div className={styles.mutual_follow_mark}>相互フォロー</div>
+                                }
+                            </div>
+
+                            <span className={styles.account_id}>
+                                @{profile.accountId}
+                            </span>
+                        </button>
+
+                        <button className={styles.unfollow_btn}>
+                            <div></div>
+                            <span>unfollow</span>
+                        </button>
+                    </div>
+
+                    {profile.accountExplanation !== undefined &&
+                        <div className={styles.account_explanation}>
+                            {profile.accountExplanation}
+                        </div>
+                    }
+                </div>
+            </div>
+        </>
+    )
+};
+
+export default EyesFollowingProfileCard;

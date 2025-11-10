@@ -1,0 +1,105 @@
+﻿.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+}
+
+.sider_display_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+
+
+.sider_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    .sider_container {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sider_container {
+        width: 0;
+        display: none;
+    }
+}
+
+
+.help_menu {
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 4%;
+    background-color: #e6e9ef;
+    border: solid 2px #c4cbd9;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.report_button {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    width: 72%;
+    gap: 16px;
+    margin-left: 16%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 16.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.68px;
+    color: #516d91;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 2.7% 2.7% 2.7% 2.7%;
+    padding: 4.3% 12% 4.3% 12%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+    .report_button:hover {
+        background-color: #E5EDF5;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+@media (max-width: 1200px) and (min-width: 800px) {
+    .report_button {
+        font-size: 12px;
+    }
+}
+
+
+
+.display_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}

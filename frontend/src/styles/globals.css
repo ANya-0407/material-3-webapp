@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fffcfa;
+    color: #151515;
+    line-height: 1.15;
+}
+

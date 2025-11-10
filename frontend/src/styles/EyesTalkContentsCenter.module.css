@@ -1,0 +1,107 @@
+﻿.eyes_talk_contents_center_wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    width: 100%;
+    height: 0px;
+    overflow: auto;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+        .eyes_talk_contents_center_wrapper::-webkit-scrollbar {
+            width: 8px; 
+            height: 8px; 
+        }
+
+        .eyes_talk_contents_center_wrapper::-webkit-scrollbar-thumb {
+            background: linear-gradient(to right, rgb(104, 104, 104, 0.5), white, rgb(104, 104, 104, 0.5));
+            border-radius: 5px;
+            box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+        }
+
+        .eyes_talk_contents_center_wrapper::-webkit-scrollbar-track {
+            background-color: transparent; 
+        }
+
+
+
+.loader_background {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    padding-bottom: 25px;
+}
+    .loader {
+        border: 4px solid #909090;
+        border-left-color: transparent;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        animation: spin89345 1s linear infinite;
+    }
+        @keyframes spin89345 {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+
+
+.error_background {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    padding-bottom: 25px;
+}
+    .error_background p {
+        font-size: 17px;
+        color: #303030;
+    }
+
+    .error_background button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 30px;
+        background: linear-gradient(30deg,rgba(89,97,223,1),rgba(245,116,185,1));
+        clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+        margin-top: 16px;
+    }
+        .error_background button div {
+            position: absolute;
+            top: 2.5px;
+            bottom: 2.5px;
+            left: 6.0px;
+            right: 6.0px;
+            background: white;
+            clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+            z-index: 1;
+        }
+
+        .error_background button span {
+            font-size: 16px;
+            color: #303030;
+            z-index: 2;
+        }

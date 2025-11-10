@@ -1,0 +1,50 @@
+﻿.voices_follower_list_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #686a68;
+}
+
+
+
+.error_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+    .error_background p {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #303030;
+    }
+
+    .error_background button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 30px;
+        background: linear-gradient(30deg,rgba(89,97,223,1),rgba(245,116,185,1));
+        clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+        margin-top: 16px;
+    }
+        .error_background button div {
+            position: absolute;
+            top: 2.5px;
+            bottom: 2.5px;
+            left: 6.0px;
+            right: 6.0px;
+            background: white;
+            clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+            z-index: 1;
+        }
+
+        .error_background button span {
+            font-size: 16px;
+            z-index: 2;
+        }

@@ -1,0 +1,500 @@
+﻿.login_form_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 550px;
+    background: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #909090;
+    border-radius: 15px;
+    padding: 20px 30px 20px 30px;
+    margin-top: 10vh;
+    z-index: 1;
+}
+@media (max-width: 650px) {
+    .login_form_wrapper {
+        width: 92vw;
+        padding: 2.4vw 3.6vw 2.4vw 3.6vw;
+        margin-top: 18.0vw;
+        margin-bottom: 20.0vw;
+    }
+}
+
+
+    .tytle_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 27px;
+        color: #404040;
+        gap: 10px;
+        margin-left: 5px;
+    }
+    @media (max-width: 650px) {
+        .tytle_container {
+            font-size: 5.5vw;
+            gap: 2.0vw;
+            margin-left: 0.87vw;
+        }
+    }
+        .tytle_point {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            animation: rotate_3922 1.2s linear infinite;
+            background-color: #9b59b6;
+            background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+        }
+        @media (max-width: 650px) {
+            .tytle_point {
+                width: 7.3vw;
+                height: 7.3vw;
+                box-shadow: 0 1.08vw 1.8vw rgba(0, 0, 0, 0.3), 0 0.72vw 0.72vw rgba(0, 0, 0, 0.22);
+            }
+        }
+            .tytle_point span {
+                position: absolute;
+                border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                background-image: radial-gradient( circle farthest-corner at 14.2% 27.5%,  rgba(104,199,255,1) 0%, rgba(181,126,255,1) 90% );
+            }
+
+            .tytle_point span:nth-of-type(1) {
+              filter: blur(5px);
+            }
+            @media (max-width: 650px) {
+                .tytle_point span:nth-of-type(1) {
+                    filter: blur(0.87vw);
+                }
+            }
+
+            .tytle_point span:nth-of-type(2) {
+              filter: blur(10px);
+            }
+            @media (max-width: 650px) {
+                .tytle_point span:nth-of-type(2) {
+                    filter: blur(1.74vw);
+                }
+            }
+
+            .tytle_point span:nth-of-type(3) {
+              filter: blur(25px);
+            }
+            @media (max-width: 650px) {
+                .tytle_point span:nth-of-type(3) {
+                    filter: blur(4.4vw);
+                }
+            }
+
+            .tytle_point span:nth-of-type(4) {
+              filter: blur(50px);
+            }
+            @media (max-width: 650px) {
+                .tytle_point span:nth-of-type(4) {
+                    filter: blur(8.7vw);
+                }
+            }
+
+            .tytle_point::after {
+              content: "";
+              position: absolute;
+              top: 5px;
+              left: 5px;
+              right: 5px;
+              bottom: 5px;
+              background-color: #fff;
+              border: solid 5px #ffffff;
+              border-radius: 50%;
+            }
+            @media (max-width: 650px) {
+                .tytle_point::after {
+                    top: 0.87vw;
+                    left: 0.87vw;
+                    right: 0.87vw;
+                    bottom: 0.87vw;
+                    border: solid 0.87vw #ffffff;
+                }
+            }
+
+    .mailaddress_tytle_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    @media (max-width: 650px) {
+        .mailaddress_tytle_container {
+            margin-top: 1.0vw;
+            margin-left: 1.0vw;
+            margin-right: 1.0vw;
+        }
+    }
+        .mailaddress_tytle {
+            font-size: 17px;
+            color: #404040;
+        }
+        @media (max-width: 650px) {
+            .mailaddress_tytle {
+                font-size: 3.8vw;
+            }
+        }
+
+        .mailaddress_error_message {
+            font-size: 14px;
+            color: red;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        @media (max-width: 650px) {
+            .mailaddress_error_message {
+                font-size: 3.1vw;
+            }
+        }
+
+    .email_placeholder_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: -5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a;
+        margin-top: 5px;
+        padding: 5px 15px 5px 15px;
+    }
+    @media (max-width: 650px) {
+        .email_placeholder_container {
+            border-radius: 1.8vw;
+            margin-top: 1.0vw;
+            padding: 1.1vw 3.3vw 1.1vw 3.3vw;
+
+        }
+    }
+        .email_placeholder_container span {
+            font-size: 20px;
+            color: #505050;
+            margin-right: 22px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        @media (max-width: 650px) {
+            .email_placeholder_container span {
+                font-size: 4.5vw;
+                margin-right: 4.5vw;
+                margin-top: 1.0vw;
+                margin-bottom: 1.0vw;
+            }
+        }
+
+        .email_placeholder_container input {
+            font-size: 17.0px;
+            color: #404040;
+            width: 410px;
+        }
+        @media (max-width: 650px) {
+            .email_placeholder_container input {
+                font-size: 3.8vw;
+                width: 65vw;
+            }
+        }
+
+    .password_tytle_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    @media (max-width: 650px) {
+        .password_tytle_container {
+            margin-top: 1.0vw;
+            margin-left: 1.0vw;
+            margin-right: 1.0vw;
+        }
+    }
+        .password_tytle {
+            font-size: 17px;
+            color: #404040;
+        }
+        @media (max-width: 650px) {
+            .password_tytle {
+                font-size: 3.8vw;
+            }
+        }
+
+        .password_error_message {
+            font-size: 14px;
+            color: red;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        @media (max-width: 650px) {
+            .password_error_message {
+                font-size: 3.1vw;
+            }
+        }
+
+    .password_placeholder_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: -5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a;
+        margin-top: 5px;
+        padding: 5px 15px 5px 15px;
+    }
+    @media (max-width: 650px) {
+        .password_placeholder_container {
+            border-radius: 1.8vw;
+            margin-top: 1.0vw;
+            padding: 1.1vw 3.3vw 1.1vw 3.3vw;
+        }
+    }
+        .password_placeholder_container span {
+            font-size: 20px;
+            color: #505050;
+            margin-right: 22px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        @media (max-width: 650px) {
+            .password_placeholder_container span {
+                font-size: 4.5vw;
+                margin-right: 4.5vw;
+                margin-top: 1.0vw;
+                margin-bottom: 1.0vw;
+            }
+        }
+
+        .password_placeholder_container input {
+            font-size: 17px;
+            color: #404040;
+            width: 380px;
+            margin-right: 12px;
+        }
+        @media (max-width: 650px) {
+            .password_placeholder_container input {
+                font-size: 3.8vw;
+                width: 64vw;
+                margin-right: 1.2vw;
+            }
+        }
+
+        .password_placeholder_container button {
+            font-size: 17px;
+            color: #5c5c5c;
+        }
+        @media (max-width: 650px) {
+            .password_placeholder_container button {
+                font-size: 4.0vw;
+            }
+        }
+
+    .option_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px 10px 10px;
+    }
+    @media (max-width: 650px) {
+        .option_container {
+            margin: 1.6vw 2.0vw 1.6vw 2.0vw;
+        }
+    }
+        .option_checkbox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+        }
+            .option_checkbox input {
+                display: none;
+            }
+
+            .checkbox_inner {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #505050;
+                border-radius: 4px;
+                position: relative;
+                cursor: pointer;
+            }
+                .checkbox_inner::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 9px;
+                    height: 9px;
+                    background-color: #505050;
+                    border-radius: 2px;
+                    opacity: 0;
+                }
+
+            .option_checkbox input:checked + .checkbox_inner::after {
+                opacity: 1;
+            }
+
+            .option_checkbox span {
+                font-size: 15px;
+                color: #404040;
+                cursor: pointer;
+            }
+            @media (max-width: 650px) {
+                .option_checkbox span {
+                    font-size: 3.1vw;
+                }
+            }
+
+        .option_container button {
+            font-size: 15px;
+            color: dodgerblue;
+            text-decoration: underline;
+        }
+        @media (max-width: 650px) {
+            .option_container button {
+                font-size: 3.1vw;
+            }
+        }
+
+    .processing_error_message {
+        font-size: 15px;
+        color: red;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    @media (max-width: 650px) {
+        .processing_error_message {
+            font-size: 3.1vw;
+        }
+    }
+
+    .dummy_login_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 52px;
+        border-radius: 6px;
+        background: #bababa;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .loader {
+            width: 25px;
+            height: 25px;
+            border: 3px solid #909090;
+            border-left-color: transparent;
+            border-radius: 50%;
+            margin: auto;
+            animation: spin89345 1s linear infinite;
+        }
+        @keyframes spin89345 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    .login_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 52px;
+        font-size: 22px;
+        border-radius: 6px;
+        cursor: pointer;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+        box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+        color: #fff;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 650px) {
+        .login_btn {
+            width: 65vw;
+            margin-top: 2.0vw;
+            font-size: 4.0vw;
+        }
+    }
+        .login_btn:hover {
+            box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+            transform: translateY(-0.1em);
+        }
+
+        .login_btn:active {
+            box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+            transform: translateY(0em);
+        }
+
+    .dividing_line {
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        height: 1.5px;
+        background-color: #9c9c9c;
+    }
+    @media (max-width: 650px) {
+        .dividing_line {
+            margin-top: 2.0vw;
+            margin-left: 1.6vw;
+            margin-right: 1.6vw;
+            height: 0.4vw;
+        }
+    }
+
+    .signup_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 38px;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        background-image: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+        box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+        border-radius: 6px;
+        text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 650px) {
+        .signup_btn {
+            margin-top: 2.0vw;
+            margin-bottom: 6.0vw;
+            font-size: 4.0vw;
+        }
+    }
+        .signup_btn:hover {
+            box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+            transform: translateY(-0.1em);
+        }
+
+        .signup_btn:active {
+            box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+            transform: translateY(0em);
+        }

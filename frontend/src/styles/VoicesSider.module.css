@@ -1,0 +1,294 @@
+﻿.voices_sider_wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 160px;
+    box-shadow: inset -3px 3px 6px #a9a9aa77, -3px 3px 6px #a9a9aa77;
+    overflow: hidden;
+    z-index: 9;
+}
+@media (max-width: 650px) {
+    .voices_sider_wrapper {
+        display: none;
+        width: 0;
+    }
+}
+
+
+.mode_menu {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    background: transparent;
+    background: linear-gradient(to top,#696969 50%,rgba(0,0,0,0) 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0% 100%);
+}
+    .mode_menu::before {
+        content: "";
+        position: absolute;
+        top: 1.5px;
+        bottom: 2.5px;
+        left: 1.5px;
+        right: 1.5px;
+        background: #ffffff;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0% 100%);
+    }
+
+    .toggle_mode_btn {
+        position: absolute;
+        top: 6px;
+        bottom: 10px;
+        left: 6px;
+        right: 6px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+        clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 100%);
+    }
+        .toggle_mode_btn::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            bottom: 3.5px;
+            left: 2px;
+            right: 2px;
+            background: #ffffff;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 100%);
+        }
+
+        .toggle_mode_btn p {
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 26px;
+            font-weight: 300;
+            color: #686a68;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        .toggle_mode_btn:hover p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+            .toggle_mode_btn p span {
+                font-size: 22px;
+                color: #808080;
+            }
+
+.icon_image_frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: 80px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    background: #898989;
+    z-index: 2;
+}
+    .account_icon_wrapper {
+        width: 74px;
+        height: 74px;
+        clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+        overflow: hidden;
+        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+        cursor: pointer;
+        z-index: 3;
+    }
+        .account_icon {
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+        }
+
+.contents_menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    gap: 21px;
+}
+    .home_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .home_btn span {
+            font-size: 21px;
+        }
+
+    .login_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .login_btn span {
+            font-size: 21px;
+        }
+
+    .message_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .message_btn span {
+            position: relative;
+            font-size: 21px;
+        }
+            .message_unaware_mark {
+                position: absolute;
+                top: 20%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #61b2ff;
+            }
+
+    .notice_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .notice_btn span {
+            position: relative;
+            font-size: 21px;
+        }
+            .notice_unaware_mark {
+                position: absolute;
+                top: 20%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #61b2ff;
+            }
+
+    .live_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .live_btn span {
+            font-size: 21px;
+        }
+
+    .wallet_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .wallet_btn span {
+            position: relative;
+            font-size: 21px;
+        }
+            .wallet_unaware_mark {
+                position: absolute;
+                top: 20%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #61b2ff;
+            }
+
+    .trace_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .trace_btn span {
+            font-size: 21px;
+        }
+
+    .bookmark_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .bookmark_btn span {
+            font-size: 21px;
+        }
+
+    .help_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .help_btn span {
+            font-size: 21px;
+        }
+
+    .setting_btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        width: 80%;
+        font-size: 19px;
+        color: #545454;
+    }
+        .setting_btn span {
+            font-size: 21px;
+        }

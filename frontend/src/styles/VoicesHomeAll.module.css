@@ -1,0 +1,46 @@
+﻿.voices_home_all_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+    .contents_layout_container_pc {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+        .contents_layout_left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding-left: 1.2%;
+            padding-right: 0.6%;
+        }
+
+
+        .contents_layout_right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding-left: 0.6%;
+            padding-right: 1.2%;
+        }
+
+
+    .contents_layout_container_mobile {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+        .contents_layout_center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }

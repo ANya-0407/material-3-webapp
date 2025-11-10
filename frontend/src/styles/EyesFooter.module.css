@@ -1,0 +1,158 @@
+﻿.eyes_footer_wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    background: #fffcfa;
+    height: 50px;
+    width: 100%;
+    box-shadow: 3px -3px 6px #a9a9aa77;
+    overflow: hidden;
+    z-index: 9;
+}
+
+
+.contents_menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    padding-left: 3.0%;
+}
+    .home_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #545454;
+    }
+        .home_btn span {
+            font-size: 22px;
+        }
+
+    .login_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #545454;
+    }
+        .login_btn span {
+            font-size: 22px;
+        }
+
+    .message_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #545454;
+    }
+        .message_btn span {
+            position: relative;
+            font-size: 22px;
+        }
+            .message_unaware_mark {
+                position: absolute;
+                top: 20%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #e480ed;
+            }
+
+    .notice_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #545454;
+    }
+        .notice_btn span {
+            position: relative;
+            font-size: 22px;
+        }
+            .notice_unaware_mark {
+                position: absolute;
+                top: 20%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #e480ed;
+            }
+
+.mode_menu {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    background: transparent;
+    background: linear-gradient(to right,#696969 50%,rgba(0,0,0,0) 80%);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+    .mode_menu::before {
+        content: "";
+        position: absolute;
+        top: 1.5px;
+        bottom: 1.5px;
+        left: 2.5px;
+        right: 1.5px;
+        background: #ffffff;
+        clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .toggle_mode_btn {
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        left: 11px;
+        right: 4px;
+        background: linear-gradient(300deg,rgba(89,97,223,0.8),rgba(245,116,185,0.8));
+        clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+        .toggle_mode_btn::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            left: 4px;
+            right: 2px;
+            background: #ffffff;
+            clip-path: polygon(27% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .toggle_mode_btn p {
+            position: absolute;
+            top: 50%;
+            left: 28%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #686a68;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        .toggle_mode_btn:hover p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+            .toggle_mode_btn p span {
+                font-size: 20px;
+                color: #808080;
+            }

@@ -1,0 +1,12 @@
+﻿.cluster_comment_area_wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+
+        

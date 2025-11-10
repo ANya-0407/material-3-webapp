@@ -1,0 +1,135 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.display_center_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    min-height: 100vh;
+    background: #fffcfa;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 52px;
+}
+@media (min-width: 1200px) {
+    .display_center_wrapper {
+        width: 1200px;
+    }
+}
+@media (max-width: 1000px) {
+    .display_center_wrapper {
+        width: 100vw;
+    }
+}
+@media (max-width: 650px) {
+    .display_center_wrapper {
+        padding-top: 14vw;
+    }
+}
+
+
+.contents_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 160px;
+    box-shadow: 3px 3px 6px #a9a9aa77;
+}
+@media (max-width: 650px) {
+    .contents_wrapper {
+        margin-left: 0;
+    }
+}
+    .radio_btn_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 42px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #ffffff;
+        box-shadow: 3px 3px 6px #a9a9aa77;
+        overflow: hidden;
+        gap: 5px;
+    }
+    @media (max-width: 1000px) {
+        .radio_btn_wrapper {
+            height: 4.5vw;
+            gap: 0.6vw;
+        }
+    }
+    @media (max-width: 650px) {
+        .radio_btn_wrapper {
+            height: 11.0vw;
+            gap: 1.2vw;
+        }
+    }
+        .radio_btn_wrapper input {
+            display: none;
+        }
+
+        .radio_btn_wrapper label {
+            position: relative;
+            width: 48%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        @media (max-width: 1000px) {
+            .radio_btn_wrapper label {
+                border-radius: 1.0vw;
+            }
+        }
+        @media (max-width: 650px) {
+            .radio_btn_wrapper label {
+                width: 47%;
+                height: 75%;
+                border-radius: 2.0vw;
+            }
+        }
+
+            .selected_flame {
+                position: absolute;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                width: 92%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+            }
+                .selected_flame_concealing1 {
+                    position: absolute;
+                    top: -1px;
+                    bottom: 2.5px;
+                    left: -1px;
+                    right: -1px;
+                    background: #ffffff;
+                }
+            
+            .radio_btn_wrapper label span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: #696969;
+                z-index: 2;
+            }
+            @media (max-width: 1000px) {
+                .radio_btn_wrapper label span {
+                    font-size: 2.2vw;
+                }
+            }
+            @media (max-width: 650px) {
+                .radio_btn_wrapper label span {
+                    font-size: 4.5vw;
+                    letter-spacing: 1px;
+                }
+            }

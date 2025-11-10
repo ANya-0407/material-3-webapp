@@ -1,0 +1,98 @@
+﻿.cluster_card_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 6px 12px #c5c5c5, -3px -6px 12px #ffffff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+    
+    .participants_number {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-size: 15px;
+        color: #ffffff;
+        background: linear-gradient(30deg, rgba(40,40,40,0.7), rgba(40,40,40,0.1));
+        padding: 8px 10px 8px 30px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%);
+    }
+
+    .participating_mark {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 15px;
+        color: #ffffff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    }
+
+    .header_image_wrapper {
+        width: 100%;
+        height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+    }
+        .header_image {
+            display: flex;
+        }
+
+    .cluster_card_middle {
+        position: relative;
+        width: 100%;
+    }
+        .gradation_top {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to top,rgba(255,255,255,1),rgba(255,255,255,0));
+        }
+
+        .cluster_name {
+            font-size: 20px;
+            margin: 0 30px 10px 30px;
+            text-align: left;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .gradation_under {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2.0px;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+            box-shadow: 0 3px 10px #c5c5c5;
+        }
+
+    .created_at {
+        font-size: 16px;
+        color: #545454;
+        letter-spacing: 1px;
+        margin-left: auto;
+        margin-right: 4.0%;
+    }
+
+    .cluster_explanation {
+        width: 100%;
+        font-size: 15px;
+        color: #404040;
+        padding: 10px 20px 10px 20px;
+        text-align: left;
+        overflow: hidden;
+    }

@@ -1,0 +1,41 @@
+﻿.eyes_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    background: linear-gradient(to bottom,rgba(89,97,223,1),rgba(245,116,185,1));
+    border-radius: 50%;
+    color: #606060;
+    box-shadow: 5px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    z-index: 1;
+}
+    .eyes_button:hover {
+        box-shadow: -5px 10px 20px rgba(0,0,0,0.1);
+    }
+    .eyes_button::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border-radius: 50%;
+        background-color: floralwhite;
+        z-index: -1;
+    }
+
+
+.eyes_form_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+}

@@ -1,0 +1,28 @@
+# --- 共通 ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# --- フロントエンド ---
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/.vercel/
+frontend/dist/
+frontend/coverage/
+
+# --- バックエンド ---
+backend/.gradle/
+backend/**/build/
+# Gradle wrapper 
+!backend/gradle/wrapper/gradle-wrapper.jar
+
+# --- 環境ファイル ---
+.env
+!.env.example
+
+# --- ログ ---
+**/*.log
+logs/

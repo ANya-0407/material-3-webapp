@@ -1,0 +1,357 @@
+﻿.main_eyes_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px #a9a9aa77;
+}
+    .main_eyes_upper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        border-top: 1px solid #787878;
+        border-left: 1px solid #787878;
+        border-right: 1px solid #787878;
+    }
+        .main_eyes_upper::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2.5px;
+            background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+            box-shadow: 0 3px 10px #c5c5c5;
+        }
+
+        .back_btn {
+            font-size: 27px;
+            color: #707070;
+            margin-left: 16px;
+        }
+
+        .account_icon_wrapper {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+            overflow: hidden;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+            margin-top: 40px;
+            margin-left: 10px;
+            z-index: 2;
+        }
+            .account_icon {
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            }
+
+        .account_name {
+            font-size: 19px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 6px;
+            margin-right: 50px;
+        }
+
+        .eyes_time {
+            font-size: 16px;
+            color: #545454;
+            letter-spacing: 1px;
+            margin-left: auto;
+            margin-right: 25px;
+        }
+
+    .eyes_tag_border {
+        position: absolute;
+        top: 60px;
+        left: auto;
+        right: 0;
+        display: flex;
+        max-width: 85%;
+        height: 34px;
+        padding: 1px 0 1px 2px;
+        background: #909090;
+        clip-path: polygon(36px 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+        .eyes_tag {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 28px;
+            padding-right: 10px;
+            background: #ffffff;
+            clip-path: polygon(34px 0%, 100% 0%, 100% 100%, 0% 100%);
+            white-space: nowrap; 
+            overflow: hidden;
+        }
+            .eyes_tag_text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                font-size: 15px;
+                color: #303030;
+            }
+                .scrolling {
+                    animation: scroll var(--scroll-speed, 15s) linear infinite; 
+                }
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0%);
+                    }
+
+                    10% {
+                        transform: translateX(0%);
+                    }
+
+                    100% {
+                        transform: translateX(-75%); 
+                    }
+                }
+
+                .eyes_tag span {
+                    font-size: 18px;
+                    color: #757575;
+                }
+                
+    .eyes_image_wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+        cursor: pointer;
+        margin-top: 3px;
+        z-index: 1;
+    }
+        .eyes_image {
+            display: flex;
+        }
+
+    .main_eyes_lower {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 34px;
+    }
+        .main_eyes_lower::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #787878;
+            border-radius: 2px;
+        }
+
+        .hashtag_container {
+            position: absolute;
+            bottom: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 35px;
+            background-image: linear-gradient(to top, rgba(256,256,256,0.7) 30%, rgba(256,256,256,0.5) 60%, rgba(256,256,256,0) 100%);
+        }
+            .hashtag {
+                font-size: 16px;
+                color: #545454;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+        .eyes_view_count {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            margin-left: 20px;
+            margin-right: auto;
+        }
+            .eyes_view_count p {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .eyes_view_count span {
+                font-size: 14px;
+                color: #686a68;
+            }
+
+        .eyes_btn_container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            gap: 14px;
+            padding: 0 20px 0 15px;
+            margin-left: auto;
+        }
+            .eyes_btn_container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 1.5px;
+                background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+                border-radius: 2px;
+            }
+
+            .eyes_btn_container .btn_ellipsis {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .eyes_btn_container .btn_report {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .eyes_btn_container .btn_bookmark {
+                font-size: 18px;
+                color: #686a68;
+            }
+
+            .eyes_btn_container .btn_good {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 3px;
+            }
+
+                .eyes_btn_container .btn_good p {
+                    font-size: 19px;
+                    color: hotpink;
+                }
+
+                .eyes_btn_container .btn_good span {
+                    font-size: 14px;
+                    color: #686a68;
+                }
+
+
+
+.loader_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+    background: white;
+    box-shadow: 3px 3px 6px #a9a9aa77;
+}
+    .loader_background_upper {
+        width: 100%;
+        height: 45px;
+        position: relative;
+        border-top: 1px solid #787878;
+        border-left: 1px solid #787878;
+        border-right: 1px solid #787878;
+    }
+        .loader_background_upper::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+        }
+
+    .loader {
+        border: 4px solid #909090;
+        border-left-color: transparent;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        animation: spin89345 1s linear infinite;
+    }
+        @keyframes spin89345 {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+    .loader_background_lower {
+        width: 100%;
+        height: 34px;
+        position: relative;
+    }
+        .loader_background_lower::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #787878;
+            border-radius: 2px;
+        }
+
+
+
+.error_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background: white;
+    box-shadow: 3px 3px 6px #a9a9aa77;
+}
+    .error_background p {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #303030;
+    }
+
+    .error_background button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 30px;
+        background: linear-gradient(30deg,rgba(89,97,223,1),rgba(245,116,185,1));
+        clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+        margin-top: 16px;
+    }
+        .error_background button div {
+            position: absolute;
+            top: 2.5px;
+            bottom: 2.5px;
+            left: 6.0px;
+            right: 6.0px;
+            background: white;
+            clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+            z-index: 1;
+        }
+
+        .error_background button span {
+            font-size: 16px;
+            z-index: 2;
+        }

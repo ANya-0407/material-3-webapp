@@ -1,0 +1,133 @@
+﻿.eyes_profile_eyes_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+    .contents_layout_container_pc {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10px;
+    }
+        .contents_layout_left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding-left: 1.2%;
+            padding-right: 0.6%;
+        }
+
+            .loader_background {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                width: 100%;
+                height: 500px;
+                background: white;
+                border-radius: 15px;
+                box-shadow: 3px 6px 12px #c5c5c5, -3px -6px 12px #ffffff;
+                overflow: hidden;
+                margin-bottom: 10px;
+                z-index: 1;
+            }
+                .loader_background_upper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+                    height: 38px;
+                    border-radius: 15px 15px 0 0;
+                    border-top: 1px solid #787878;
+                    border-left: 1px solid #787878;
+                    border-right: 1px solid #787878;
+                }
+                    .loader_background_upper::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                        background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+                    }
+
+                .loader {
+                    border: 4px solid #909090;
+                    border-left-color: transparent;
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    animation: spin89345 1s linear infinite;
+                }
+                    @keyframes spin89345 {
+                        0% {
+                        transform: rotate(0deg);
+                        }
+
+                        100% {
+                        transform: rotate(360deg);
+                        }
+                    }
+
+                .loader_background_lower {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    height: 34px;
+                }
+                    .loader_background_lower::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 1px;
+                        background: #787878;
+                        border-radius: 2px;
+                    }
+
+        .contents_layout_right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding-left: 0.6%;
+            padding-right: 1.2%;
+        }
+
+
+    .contents_layout_container_mobile {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+        .contents_layout_center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+
+
+
+    .error_background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+        .error_background p {
+            font-size: 17px;
+            margin-top: 40px;
+            color: #303030;
+        }

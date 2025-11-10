@@ -1,0 +1,184 @@
+﻿.voices_comment_area_wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: inset 0px 2px 20px #a9a9aa99;
+}
+    .comment_form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .comment_pipe {
+            width: 15px;
+            height: 20px;
+            background: linear-gradient(to right, rgb(104, 104, 104, 0.6), white, rgb(104, 104, 104, 0.6));
+            box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+            margin-left: 8.0%;
+        }
+
+        .text_placeholder {
+            width: 95%;
+            cursor: text;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 16px;
+            height: 48px;
+            background-color: #fff;
+            border: 1px solid #686868;
+            border-radius: 0 15px 0 15px;
+            color: rgb(35, 38, 59);
+            box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+            padding: 10px 15px 10px 15px;
+            vertical-align: top;
+            resize: none;
+            overflow: auto;
+            transition: all 100ms ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+        }
+            .comment_isdisplay_btn {
+                font-size: 21px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: #696969;
+                margin-top: 5px;
+                margin-left: 5.0%;
+                margin-right: auto;
+            }
+
+            .comment_btn_outer {
+                position: relative;
+                width: 130px;
+                height: 100%;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 60% 100%, 40% 100%, 0% 0%, 0% 0%);
+                margin-left: auto;
+                margin-right: 3px;
+            }
+                .comment_btn_inner {
+                    position: absolute;
+                    top: 2.5px;
+                    bottom: 2.5px;
+                    left: 10px;
+                    right: 2.5px;
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 62% 100%, 38% 100%, 0% 0%, 0% 0%);
+                    background: #ffffff;
+                    z-index: 1;
+                }
+
+                .comment_btn_outer span {
+                    position: absolute;
+                    top: 50%;
+                    left: 60%;
+                    transform: translate(-50%, -50%);
+                    font-size: 16px;
+                    z-index: 2;
+                }
+
+            .comment_btn_line {
+                width: 4.0px;
+                height: 100%;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+                margin-right: 2.5%;
+            }
+
+
+    .comment_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+        .comment_container {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            width: 96%;
+            gap: 15px;
+            box-shadow: 0px 0px 10px #bebebe, -0px -0px 10px #ffffff;
+            border-radius: 10px;
+            padding-top: 6px;
+            margin: 6px auto 0 auto;
+        }
+            .comment_container_left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 18px;
+            }
+                .comment_account_icon {
+                    height: 30px;
+                    width: 30px;
+                    transform: translateY(20%) rotate(45deg);
+                    background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                }
+
+            .comment_container_right {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 84%;
+            }
+                .comment_account_name {
+                    font-size: 17px;
+                }
+
+                .comment_text_container {
+                    font-size: 15px;
+                    margin-top: 4px;
+                    width: 100%;
+                }
+
+                .comment_evaluation_container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: end;
+                    width: 100%;
+                    height: 30px;
+                    gap: 12px;
+                }
+                    .evaluation_good {
+                        font-size: 20px;
+                        color: #686a68;
+                    }
+
+                    .evaluation_bar_background {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: start;
+                        width: 30%;
+                        height: 5px;
+                        background-color: #cfcfcf;
+                        border-radius: 5px;
+                        overflow: hidden;
+                    }
+                        .evaluation_bar {
+                            height: 100%;
+                            width: 60%;
+                            background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+                        }
+
+                    .evaluation_bad {
+                        font-size: 20px;
+                        color: #686a68;
+                    }
+
+
+    .comment_wrapper_space {
+        width: 100%;
+        height: 50px;
+    }

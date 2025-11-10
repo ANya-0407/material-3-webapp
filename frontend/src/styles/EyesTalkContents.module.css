@@ -1,0 +1,8 @@
+﻿.eyes_talk_contents_wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+}

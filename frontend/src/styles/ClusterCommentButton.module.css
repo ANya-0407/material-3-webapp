@@ -1,0 +1,41 @@
+﻿.cluster_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    background-image: linear-gradient( to bottom, rgba(37,145,251,0.98), rgba(0,7,128,1) );
+    border-radius: 50%;
+    color: #545454;
+    box-shadow: 5px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    z-index: 1;
+}
+    .cluster_button:hover {
+        box-shadow: -5px 10px 20px rgba(0,0,0,0.1);
+    }
+    .cluster_button::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border-radius: 50%;
+        background-color: floralwhite;
+        z-index: -1;
+    }
+
+
+.cluster_form_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+}

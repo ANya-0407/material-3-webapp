@@ -1,0 +1,126 @@
+﻿.voices_follower_profile_card_background {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    border-top: 1px solid #686a68;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+    .profile_background_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 8px;
+    }
+        .account_icon_wrapper {
+            position: relative;
+            width: 46px;
+            height: 46px;
+            clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+            overflow: hidden;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+            z-index: 2;
+        }
+            .account_icon {
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            }
+
+    .profile_background_right {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-grow: 1;
+        padding-right: 30px;
+    }
+        .profile_background_upper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+            .account_link_btn {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-right: 50px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+                .account_name {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 7px;
+                }
+                    .account_name span {
+                        font-size: 16px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .official_mark {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 17px;
+                        height: 17px;
+                        background-image: linear-gradient( 210deg, rgba(37,145,251,0.8), rgba(0,7,128,0.8) );
+                        border-radius: 50%;
+                        font-size: 11px;
+                        color: #ffffff;
+                    }
+
+                    .mutual_follow_mark {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 2px 5px 2px 5px;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        background: #909090;
+                        color: #ffffff;
+                    }
+
+                .account_id {
+                    font-size: 16px;
+                    color: #686a68;
+                    margin-left: 5px;
+                }
+
+            .follow_btn {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 40px;
+                padding-right: 40px;
+                height: 30px;
+                background-image: linear-gradient( 210deg, rgba(37,145,251,0.8), rgba(0,7,128,0.8) );
+                clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+            }
+                .follow_btn div {
+                    position: absolute;
+                    top: 2.5px;
+                    bottom: 2.5px;
+                    left: 6.0px;
+                    right: 6.0px;
+                    background: white;
+                    clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 100% 50%, 73% 100%, 27% 100%, 0% 50%, 0% 50%);
+                    z-index: 1;
+                }
+
+                .follow_btn span {
+                    font-size: 16px;
+                    z-index: 2;
+                }
+
+        .account_explanation {
+            font-size: 15px;
+            margin-top: 6px;
+            margin-bottom: 4px;
+        }

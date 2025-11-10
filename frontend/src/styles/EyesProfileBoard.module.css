@@ -1,0 +1,5 @@
+﻿.eyes_profile_board_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

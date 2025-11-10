@@ -1,0 +1,248 @@
+﻿.reply_comment_background {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 88%;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-top: 6px;
+    margin: 6px 2% 0 auto;
+}
+    .comment_background_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3px 8px 0 12px 
+    }
+        .alias_icon_wrapper {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+            overflow: hidden;
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            cursor: pointer;
+            z-index: 2;
+        }
+            .alias_icon {
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            }
+
+    .comment_background_right {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+        .comment_background_upper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 3px;
+        }
+            .alias_name {
+                font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 50px;
+            }
+
+            .generation_time {
+                font-size: 15px;
+                color: #686a68;
+            }
+
+        .quote_comment_container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 100%;
+            background: #fafafa;
+            border-radius: 6px;
+            box-shadow: 2px 1px 7px 0 rgb(0, 0, 0, 0.3);
+            padding: 6px 12px 6px 12px;
+            margin-top: 6px;
+        }
+            .quote_comment_commentater {
+                font-size: 13px;
+                color: #545454;
+                margin-bottom: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .quote_comment_text {
+                font-size: 14px;
+                color: #151515;
+                margin-bottom: 3px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .quote_comment_container span {
+                color: #454545;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+
+        .comment_text {             
+            font-size: 15px;
+            margin-top: 6px;
+            width: 100%;
+        }
+
+        .image_container_pc {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 10px;
+            margin-top: 10px;
+        }
+            .image_container_pc img {
+                width: 22%;
+                aspect-ratio: 1 / 1;
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            }
+
+        .image_container_mobile {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+            .message_image_layout1 img {
+                width: 280px;
+                height: 400px;
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                cursor: pointer;
+            }
+
+            .message_image_layout2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+            }
+                .message_image_layout2 img {
+                    width: 220px;
+                    height: 345px;
+                    background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                    cursor: pointer;
+                }
+
+            .message_image_layout3 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+            }
+                .message_image_layout3 .message_image_section1 img {
+                    width: 220px;
+                    height: 345px;
+                    background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                    cursor: pointer;
+                }
+
+                .message_image_layout3 .message_image_section2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5px;
+                }
+                    .message_image_layout3 .message_image_section2 img {
+                        width: 220px;
+                        height: 170px;
+                        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                        cursor: pointer;
+                    }
+
+            .message_image_layout4 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+            }
+                .message_image_layout4 .message_image_section1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5px;
+                }
+                    .message_image_layout4 .message_image_section1 img {
+                        width: 220px;
+                        height: 170px;
+                        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                        cursor: pointer;
+                    }
+
+                .message_image_layout4 .message_image_section2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5px;
+                }
+                    .message_image_layout4 .message_image_section2 img {
+                        width: 220px;
+                        height: 170px;
+                        background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                        cursor: pointer;
+                    }
+
+        .comment_lower {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            width: 100%;
+            height: 30px;
+        }
+            .good_btn {
+                font-size: 17px;
+                color: #686a68;
+                margin-right: 4px;
+            }
+
+            .good_number {
+                font-size: 14px;
+                color: #686a68;
+                margin-right: 8px;
+            }
+
+            .evaluation_bar_background {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                width: 30%;
+                height: 4px;
+                background-color: #cfcfcf;
+                border-radius: 5px;
+                overflow: hidden;
+                margin-right: 8px;
+            }
+                .evaluation_bar {
+                    height: 100%;
+                    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+                }
+
+            .bad_btn {
+                font-size: 17px;
+                color: #686a68;
+                margin-right: 12px;
+            }
+
+            .menu_btn {
+                font-size: 19px;
+                color: #686a68;
+            }

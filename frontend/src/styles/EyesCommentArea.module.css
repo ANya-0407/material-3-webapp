@@ -1,0 +1,12 @@
+﻿.eyes_comment_area_wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    box-shadow: inset -4px 0px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+  
+
+        

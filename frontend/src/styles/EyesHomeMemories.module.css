@@ -1,0 +1,71 @@
+﻿.eyes_home_memories_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+
+.memories_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+    .account_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        width: 97.5%;
+        height: 50px;
+    }
+        .account_icon {
+            height: 30px;
+            width: 30px;
+            transform: rotate(45deg);
+            background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+            margin-left: 20px;
+        }
+
+        .account_name {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+    .memories_display {
+        display: flex;
+        flex-direction: row;
+        width: 97.5%;
+        box-shadow: inset 0px 2px 20px #a9a9aa99;
+        overflow: auto;
+        gap: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        .memories {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .memories_image {
+                width: 160px;
+                height: 160px;
+                border-radius: 15px;
+                background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%, rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+                box-shadow: 5px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+                transition: 0.2s ease-in-out;
+                margin-top: 20px;
+                z-index: 1;
+            }
+                .memories_image:hover {
+                    box-shadow: -5px 10px 20px rgba(0,0,0,0.1);
+                }
+
+            .memories span {
+                font-size: 16px;
+                color: #686a68;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }

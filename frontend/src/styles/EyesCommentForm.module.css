@@ -1,0 +1,89 @@
+﻿.eyes_comment_form_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3px;
+}
+    .comment_pipe {
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(to right, rgb(104, 104, 104, 0.6), white, rgb(104, 104, 104, 0.6));
+        box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+        margin-left: 8.0%;
+    }
+
+    .text_placeholder {
+        width: 95%;
+        cursor: text;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 16px;
+        height: 48px;
+        background-color: #fff;
+        border: 1px solid #686868;
+        border-radius: 0 15px 0 15px;
+        color: rgb(35, 38, 59);
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+        padding: 10px 15px 10px 15px;
+        vertical-align: top;
+        resize: none;
+        overflow: auto;
+        transition: all 100ms ease-in-out;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .btn_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+    }
+        .comment_isdisplay_btn {
+            font-size: 21px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #696969;
+            margin-top: 5px;
+            margin-left: 5.0%;
+            margin-right: auto;
+        }
+
+        .comment_btn_outer {
+            position: relative;
+            width: 130px;
+            height: 100%;
+            background: linear-gradient(30deg,rgba(89,97,223,1),rgba(245,116,185,1));
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 60% 100%, 40% 100%, 0% 0%, 0% 0%);
+            margin-left: auto;
+            margin-right: 3px;
+        }
+            .comment_btn_inner {
+                position: absolute;
+                top: 2.5px;
+                bottom: 2.5px;
+                left: 10px;
+                right: 2.5px;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 62% 100%, 38% 100%, 0% 0%, 0% 0%);
+                background: #ffffff;
+                z-index: 1;
+            }
+
+            .comment_btn_outer span {
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                z-index: 2;
+            }
+
+        .comment_btn_line {
+            width: 4.0px;
+            height: 100%;
+            background: linear-gradient(30deg,rgba(89,97,223,1),rgba(245,116,185,1));
+            margin-right: 2.5%;
+        }
+
+        

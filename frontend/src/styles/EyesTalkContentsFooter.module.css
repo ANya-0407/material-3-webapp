@@ -1,0 +1,222 @@
+﻿.eyes_talk_contents_footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+}
+    .file_add_btn {
+        font-size: 20px;
+        color: #545454;
+        margin-bottom: 5px;
+    }
+
+    .canvas {
+        flex-grow: 1;
+        max-height: 120px;
+        border-radius: 8px;
+        box-shadow: 2px 1px 7px 0 rgb(0, 0, 0, 0.3);
+        background: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        padding: 7.5px 10px 5px 10px;
+        gap: 10px;
+        margin-left: 10px;
+    }
+        .message_contents_wrapper {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+            .errors_wrapper {
+
+            }
+
+            .image_background {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                padding: 10px 10px 10px 10px;
+            }
+                /* レイアウトの共通定義 */
+                .image_layout1 { 
+                    width: 280px; 
+                }
+
+                .image_layout2 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 400px;
+                    height: 300px;
+                }
+
+                .image_layout3 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 400px;
+                    height: 300px;
+                }
+
+                .image_layout4 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 400px;
+                    height: 300px;
+                }
+                    .image_section1, .image_section2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: calc(50% - 2px);
+                        height: 100%;
+                    }
+                        .image_slot {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            overflow: hidden;
+                            cursor: pointer;
+                            font-size: 20px;
+                        }
+                            .delete_btn {
+                                position: absolute;
+                                top: 5px;
+                                right: 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 30px;
+                                height: 30px;
+                                color: white;
+                                background: rgba(0,0,0,0.7);
+                                border-radius: 50%;
+                                border: 1px solid #ffffff1c;
+                                z-index: 2
+                            }
+
+                /* レイアウトの差分定義 */
+                .image_layout1 {
+                    width: 60%;
+                }
+                    .image_layout1 .image_slot {
+                        width: 100%;
+                    }
+
+                .image_layout2 {
+                    width: 100%;
+                    height: 250px;
+                }
+                    .image_layout2 .image_slot {
+                        width: calc(50% - 2px);
+                        height: 100%;
+                    }
+
+                .image_layout3 {
+                    width: 100%;
+                    height: 350px;
+                }
+                    .image_layout3 .image_section1 .image_slot {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .image_layout3 .image_section2 .image_slot {
+                        width: 100%;
+                        height: calc(50% - 2px);
+                    }
+
+                .image_layout4 {
+                    width: 100%;
+                    height: 350px;
+                }
+                    .image_layout4 .image_section1 .image_slot {
+                        width: 100%;
+                        height: calc(50% - 2px);
+                    }
+
+                    .image_layout4 .image_section2 .image_slot {
+                        width: 100%;
+                        height: calc(50% - 2px);
+                    }
+
+            .text_placeholder {
+                flex-grow: 1;
+                resize: none;
+                color: #151515;
+            }
+
+        .pictograph_btn {
+            font-size: 19px;
+            color: #848484;
+            margin-right: 2px;
+            margin-bottom: 5px;
+        }
+
+        .bar {
+            width: 1px;
+            height: 25px;
+            background: linear-gradient(300deg,rgba(89,97,223,1),rgba(245,116,185,1));
+            margin-right: 3px;
+            margin-bottom: 3px;
+        }
+
+        .send_btn {
+            width: fit-content;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+            .send_btn svg {
+                height: 20px;
+                transition: all 0.3s;
+            }
+            .send_btn svg path {
+                transition: all 0.3s;
+            }
+            .send_btn:hover svg path {
+                fill: #f0f0f0;
+                stroke: #000000;
+            }
+
+
+
+.loader_background {
+    width: 100%;
+    height: 120px;
+    padding: 15px 15px 15px 15px;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+}
+
+
+
+.error_background {
+    width: 100%;
+    height: 120px;
+    padding: 15px 15px 15px 15px;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+}

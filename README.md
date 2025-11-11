@@ -41,32 +41,34 @@
 
 ## 主な機能
 - 名義(Persona)切替
-- 各種メディア投稿・コメント・掲示板系
+- 各種メディア投稿/コメント/掲示板
 - メッセージ機能
-- フォロー系
-- 検索系
-- アカウント管理系　etc.
+- フォロー
+- 検索
+- アカウント認証　etc.
 
 ## プロジェクト構成の概要
     .
-    ├─ frontend/               #フロントエンド(Next.js)
+    ├─ frontend/               # フロントエンド(Next.js)
     │  ├─ src/
     │  │ ├─ components/        # UIコンポーネント
     │  │ ├─ pages/             # ページ（ルーティングのみ）
     │  │ ├─ styles/            # CSS
     │  │ ├─ types/             # 型定義
-    │  │ └─ utils/             # hooks・validator・Zodスキーマ等
+    │  │ └─ utils/             # hook・validator・Zodスキーマ等
     │  ├─ public/
     │  ├─ package.json
     │  ├─ next.config.ts
     │  └─ ...
-    ├─ backend/                #バックエンド(Spring Boot)
+    ├─ backend/                # バックエンド(Spring Boot)
     │  ├─ modules/
     │  │ ├─ api/               # 起動モジュール 
     │  │ ├─ common/            # 例外・共通型
     │  │ ├─ feature-auth/      # 認証周辺
     │  │ ├─ feature-user/      # User/Persona
     │  │ ├─ feature-post/      # EyesPost/VoicesPost
+    │  │ ├─ feature-relation/  # フォロー/ブロック等
+    │  │ ├─ ...
     │  │ └─ db-migration/      # Flyway 
     │  ├─ settings.gradle.kts
     │  ├─ build.gradle.kts

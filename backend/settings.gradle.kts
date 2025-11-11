@@ -12,6 +12,7 @@ include(
     "modules:feature-auth",
     "modules:feature-user",
     "modules:feature-post",
+    "modules:feature-relation",
     "modules:db-migration",
     "modules:api"
 )

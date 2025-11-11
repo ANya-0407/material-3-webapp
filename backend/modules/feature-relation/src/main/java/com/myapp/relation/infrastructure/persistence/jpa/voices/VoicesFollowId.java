@@ -1,0 +1,29 @@
+package com.myapp.relation.infrastructure.persistence.jpa.voices;
+
+import jakarta.persistence.Embeddable;
+
+import java.io.Serializable;
+import java.util.Objects;
+import java.util.UUID;
+
+@Embeddable
+public class VoicesFollowId implements Serializable {
+    private UUID followerPersonaId;
+    private UUID followeePersonaId;
+
+    public VoicesFollowId() {}
+    public VoicesFollowId(UUID followerPersonaId, UUID followeePersonaId) {
+        this.followerPersonaId = followerPersonaId; this.followeePersonaId = followeePersonaId;
+    }
+
+    public UUID getFollowerPersonaId() { return followerPersonaId; }
+    public UUID getFolloweePersonaId() { return followeePersonaId; }
+
+    @Override public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VoicesFollowId that)) return false;
+        return Objects.equals(followerPersonaId, that.followerPersonaId)
+                && Objects.equals(followeePersonaId, that.followeePersonaId);
+    }
+    @Override public int hashCode() { return Objects.hash(followerPersonaId, followeePersonaId); }
+}

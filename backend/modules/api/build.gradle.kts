@@ -7,7 +7,8 @@ dependencies {
     implementation(project(":modules:common"))
     implementation(project(":modules:feature-auth"))
     implementation(project(":modules:feature-user"))
-    implementation(project(":modules:feature-post"))  // ★ 追加
+    implementation(project(":modules:feature-post"))
+    implementation(project(":modules:feature-relation"))
 
     runtimeOnly(project(":modules:db-migration"))
 

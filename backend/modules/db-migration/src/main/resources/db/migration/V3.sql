@@ -118,3 +118,47 @@ CREATE TABLE voices_post_bookmarks (
   created_at     TIMESTAMPTZ NOT NULL DEFAULT now(),
   PRIMARY KEY (post_id, by_persona_id)
 );
+
+-- Eyes follows
+CREATE TABLE eyes_follows (
+  follower_persona_id UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  followee_persona_id UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  created_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT pk_eyes_follows PRIMARY KEY (follower_persona_id, followee_persona_id),
+  CONSTRAINT ck_eyes_follow_self CHECK (follower_persona_id <> followee_persona_id)
+);
+CREATE INDEX idx_eyes_follow_followee ON eyes_follows(followee_persona_id);
+CREATE INDEX idx_eyes_follow_follower ON eyes_follows(follower_persona_id);
+
+-- Eyes blocks
+CREATE TABLE eyes_blocks (
+  blocker_persona_id  UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  blocked_persona_id  UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  created_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT pk_eyes_blocks PRIMARY KEY (blocker_persona_id, blocked_persona_id),
+  CONSTRAINT ck_eyes_block_self CHECK (blocker_persona_id <> blocked_persona_id)
+);
+CREATE INDEX idx_eyes_block_blocked ON eyes_blocks(blocked_persona_id);
+CREATE INDEX idx_eyes_block_blocker ON eyes_blocks(blocker_persona_id);
+
+-- Voices follows
+CREATE TABLE voices_follows (
+  follower_persona_id UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  followee_persona_id UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  created_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT pk_voices_follows PRIMARY KEY (follower_persona_id, followee_persona_id),
+  CONSTRAINT ck_voices_follow_self CHECK (follower_persona_id <> followee_persona_id)
+);
+CREATE INDEX idx_voices_follow_followee ON voices_follows(followee_persona_id);
+CREATE INDEX idx_voices_follow_follower ON voices_follows(follower_persona_id);
+
+-- Voices blocks
+CREATE TABLE voices_blocks (
+  blocker_persona_id  UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  blocked_persona_id  UUID NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
+  created_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT pk_voices_blocks PRIMARY KEY (blocker_persona_id, blocked_persona_id),
+  CONSTRAINT ck_voices_block_self CHECK (blocker_persona_id <> blocked_persona_id)
+);
+CREATE INDEX idx_voices_block_blocked ON voices_blocks(blocked_persona_id);
+CREATE INDEX idx_voices_block_blocker ON voices_blocks(blocker_persona_id);
